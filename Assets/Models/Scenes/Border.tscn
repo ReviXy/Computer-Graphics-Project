@@ -1,0 +1,46 @@
+[gd_scene format=4 uid="uid://dgml7v737ashf"]
+
+[ext_resource type="PackedScene" uid="uid://boe4njhh1tfbv" path="res://Assets/Models/GLB/Border.glb" id="1_nqj3k"]
+[ext_resource type="Shader" uid="uid://by8a4qq8arwqn" path="res://Assets/Shaders/ToonObjects.gdshader" id="2_oye3w"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h5oic"]
+render_priority = 0
+shader = ExtResource("2_oye3w")
+shader_parameter/albedo = Color(0.46877694, 0.46877712, 0.46877676, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bbpxs"]
+_surfaces = [{
+"aabb": AABB(0.04999998, 0, -1, 0.19999997, 0.3, 2),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAAACAAMABAADAAIABAAFAAMABAACAAUAAwAFAAYABgABAAMABwAFAAIAAgABAAcABgAFAAgABgAIAAEACQAIAAUABwAKAAUACQAFAAoABwABAAoACQAKAAgACwAKAAEACwAIAAoACwABAAgA"),
+"name": "colormap",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("/f9/PszMTD4AAIA/mJkZPszMTD4AAIA//f9/PpqZmT4AAIA//f9/PszMTD4AAIC//f9/PpqZmT4AAIC/x8xMPZqZmT4AAIC/mJkZPszMTD4AAIC/x8xMPZqZmT4AAIA/mJkZPgAAAAAAAIC/x8xMPQAAAAAAAIC/x8xMPQAAAAAAAIA/mJkZPgAAAAAAAIA/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wgylv"]
+resource_name = "Root Scene_border"
+_surfaces = [{
+"aabb": AABB(0.04999998, 0, -1, 0.19999997, 0.3, 2),
+"attribute_data": PackedByteArray("AAAYP3h3Vz8AABg/eHdXPwAAGD9mZkY/AAAYP2ZmRj8AABg/mpl5PwAAGD+amXk/AAAYP2ZmRj8AABg/ZmZGPwAAGD9mZkY/AAAYP2ZmRj8AABg/eHdXPwAAGD94d1c/AAAYP5qZeT8AABg/mpl5PwAAGD9mZkY/AAAYP3h3Vz8AABg/eHdXPwAAGD9mZkY/AAAYP5qZeT8AABg/mpl5PwAAGD+amXk/AAAYP5qZeT8AABg/eHdXPwAAGD+amXk/AAAYP3h3Vz8AABg/mpl5PwAAGD+amXk/AAAYP2ZmRj8AABg/mpl5PwAAGD9mZkY/AAAYP3h3Vz8AABg/eHdXPwAAGD94d1c/AAAYP3h3Vz8="),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAwABAAQABQAEAAEABgAHAAgACQAIAAcABgAKAAcACwAHAAoADAANAA4ADwAOAA0AEAAOAA8AEQAOABAAEgATABQAFQAUABMAFgAXABgAGQAYABcAGgAbABwAHQAcABsAHgAfACAAIQAgAB8A"),
+"material": SubResource("ShaderMaterial_h5oic"),
+"name": "colormap",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 34,
+"vertex_data": PackedByteArray("/f9/PszMTD4AAIA/mJkZPszMTD4AAIA//f9/PpqZmT4AAIA/x8xMPZqZmT4AAIA/x8xMPQAAAAAAAIA/mJkZPgAAAAAAAIA//f9/PpqZmT4AAIC//f9/PpqZmT4AAIA/x8xMPZqZmT4AAIC/x8xMPZqZmT4AAIA//f9/PszMTD4AAIC//f9/PszMTD4AAIA/x8xMPQAAAAAAAIC/mJkZPgAAAAAAAIC/x8xMPZqZmT4AAIC/mJkZPszMTD4AAIC//f9/PszMTD4AAIC//f9/PpqZmT4AAIC/mJkZPgAAAAAAAIA/mJkZPgAAAAAAAIC/x8xMPQAAAAAAAIA/x8xMPQAAAAAAAIC/mJkZPszMTD4AAIC/mJkZPgAAAAAAAIC/mJkZPszMTD4AAIA/mJkZPgAAAAAAAIA/x8xMPQAAAAAAAIC/x8xMPZqZmT4AAIC/x8xMPQAAAAAAAIA/x8xMPZqZmT4AAIA//f9/PszMTD4AAIA//f9/PszMTD4AAIC/mJkZPszMTD4AAIA/mJkZPszMTD4AAIC//3//f////z//f/9/////P/9//3////8//3//f////z//f/9/////P/9//3////8//7//v////7//v/+/////v/9///////+//3///////7////9/////v////3////+//////////7//////////v/////////+//////////7//////////v/////////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7////9/////v////3////+/////f////7////9/////vwAA/3////+/AAD/f////78AAP9/////vwAA/3////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_bbpxs")
+
+[node name="Border" unique_id=1830642409 instance=ExtResource("1_nqj3k")]
+
+[node name="border" parent="RootNode" parent_id_path=PackedInt32Array(743165064) index="0" unique_id=813854315]
+mesh = SubResource("ArrayMesh_wgylv")

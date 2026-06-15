@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://g5h7f7mkhxen"]
+
+[ext_resource type="PackedScene" uid="uid://csnajcwwi6dd2" path="res://Assets/Models/GLB/Trash Can.glb" id="1_oaw6e"]
+
+[node name="Trash Can" unique_id=1731469484 instance=ExtResource("1_oaw6e")]

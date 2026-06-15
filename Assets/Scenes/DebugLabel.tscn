@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cv0xjr03k13dq"]
+
+[ext_resource type="Script" uid="uid://cghfgsgqgwd4g" path="res://Assets/Scripts/DebugLabel.gd" id="1_srdyb"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=584725426]
+layer = 10
+script = ExtResource("1_srdyb")
+
+[node name="DebugLabel" type="Label" parent="." unique_id=554056134]
+offset_right = 400.0
+offset_bottom = 149.0
+theme_override_font_sizes/font_size = 25
+text = "1
+2
+3
+4"
+
+[node name="Label" type="Label" parent="." unique_id=147196600]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -320.0
+offset_bottom = 400.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 25
+text = "WASD - Передвижение
+SPACE - Прыжок
+SHIFT - Спринт
+1 - Захват мыши
+MOUSE WHEEL - Зум
+L - Сменить время суток
+; - Сменить шейдер
+Z - Скрыть меню"
