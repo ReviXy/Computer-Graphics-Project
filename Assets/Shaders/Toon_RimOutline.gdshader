@@ -41,6 +41,6 @@ void light() {
 		float specular_raw = pow(clamp(NdotV, 0.0, 1.0), specular_shininess) * specular_intensity;
 		float specular_stepped = cel_step(specular_raw, specular_steps);
 		
-		SPECULAR_LIGHT += specular_stepped * vec3(1.0) * ATTENUATION;
+		SPECULAR_LIGHT = max(specular_stepped * vec3(1.0) * ATTENUATION, SPECULAR_LIGHT);
 	}
 }
